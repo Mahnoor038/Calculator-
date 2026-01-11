@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #0a0a0a, #3a4452);
+}
+body .container {
+    background: transparent;
+    border: 1px solid #717377;
+    border-radius: 0.5rem;
+    box-shadow: 0px 3px 15px rgba(115, 115, 115, 0.1);
+}
+.container input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    box-shadow: 0px 3px 15px rgba(84, 84, 84, 0.1);
+    padding: 2.5rem 2rem 1.7rem;
+    text-align: right;
+    font-size: 1.8rem;
+    color: #ffffff;
+}
+input::placeholder {
+    color: #ffffff;
+}
+input:focus {
+    outline: none;
+}
+div button {
+    height: 4.8rem;
+    width: 4.8rem;
+    margin: 1.1rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    border: none;
+    background: transparent;
+    color: #ffffff;
+    box-shadow: -8px -8px 15px rgba(200, 200, 200, 0.1);
+}
+button:active {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(0.95);
+}
+.rsltbtn {
+    background: #fb7c14;
+}
+.rsltbtn:active {
+  background-color: #e96b0c;
+}
+.oprBtn {
+    color: #6dee0a;
+}
+.oprBtn:active {
+  background-color: rgba(109, 238, 10, 0.25);
+}
+@media (max-width: 500px) {
+    div button {
+        height: 2.9rem;
+        width: 2.9rem;
+        margin: 0.5rem;
+        border-radius: 50%;
+        font-size: 0.7rem;
+    }
+    .container input {
+        font-size: 1rem;
+        padding-right: 1.6rem;
+    }
+}
